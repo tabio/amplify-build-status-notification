@@ -34,7 +34,7 @@
 1. Amplify Console のすべてのアプリからアプリ固有の ID を取得する
    - https://xxx.yyy.amplifyapp.com (yyy の部分)
 1. lib/environment.ts の EnvironmentVariablesSetting を修正
-   - appIds に 1 で取得した ID を配列で記載
+   - appIds に上で取得した ID を配列で記載
    - lambdaEnvironmentVariables に上で取得した ID に対応するサービス名を連想配列で記載
 1. lambda/slack-notification.ts の修正
    - appIdToServiceName 内ロジックを修正して適切な prefix を追加
